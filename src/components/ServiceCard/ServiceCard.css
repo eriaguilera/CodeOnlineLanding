@@ -1,0 +1,111 @@
+.service-card {
+   position: relative;
+   /* overflow: visible;*/
+    
+    background: white;
+    width: 280px;
+    padding: 40px 30px;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 28px 70px rgba(124, 92, 255, 0.18);
+}
+
+.service-icon-container {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f2ecff, #e8f4ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon {
+    font-size: 46px;
+    color: #6b5cff;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.12);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.service-card p {
+    font-size: 17px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.service-card button {
+    background: linear-gradient(135deg, #7c5cff, #5b8cff);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(124, 92, 255, 0.35);
+    position: relative;
+}
+
+.service-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 35px rgba(124, 92, 255, 0.45);
+    background: linear-gradient(135deg, #6848ff, #4f7cff);
+}
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(124,92,255,.25),
+        rgba(91,140,255,.15)
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.service-card {
+  position: relative;
+}
+
+.service-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3e8ff;
+  color: #7e22ce;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.btn-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}

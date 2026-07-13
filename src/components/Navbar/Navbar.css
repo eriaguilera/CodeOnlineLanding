@@ -1,0 +1,97 @@
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: rgba(11,16,38,.95);
+    backdrop-filter: blur(12px);
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #7c5cff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+  cursor: pointer;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo-text{
+    margin:0;
+    font-size:36px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+.code{
+    color:white;
+}
+
+.online{
+    background:linear-gradient(135deg,#7c5cff,#2ea8ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.logo-icon{
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#7c5cff,#2ea8ff);
+
+    color:white;
+
+    font-size:22px;
+    font-weight:bold;
+
+    box-shadow:0 10px 25px rgba(124,92,255,.35);
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #7c5cff;
+}
+
+nav ul li a:active,
+nav ul li a:focus {
+  color: #2ea8ff;
+  outline: none;
+}

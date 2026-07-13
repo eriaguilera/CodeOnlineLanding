@@ -1,0 +1,28 @@
+.section-title {
+    font-size: 54px;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-description {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.section-line {
+    width: 90px;
+    height: 5px;
+    margin: 0 auto 35px;
+    border-radius: 999px;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+}

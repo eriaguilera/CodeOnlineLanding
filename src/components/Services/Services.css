@@ -1,0 +1,35 @@
+.services {
+    padding: 120px 80px;
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f5ecff 0%,
+        #eef4ff 45%,
+        #dff3ff 100%
+    );
+
+    position: relative;
+    overflow: hidden;
+}
+
+.services h2 {
+    font-size: 54px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 22px;
+    color: #6b7280;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}

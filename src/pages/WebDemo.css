@@ -1,8 +1,13 @@
 .web-demo {
   min-height: 100vh;
   padding: 70px 60px;
+
   background:
-    radial-gradient(circle at top left, rgba(124, 92, 255, 0.16), transparent 34%),
+    radial-gradient(
+      circle at top left,
+      rgba(124, 92, 255, 0.16),
+      transparent 34%
+    ),
     linear-gradient(135deg, #f8fbff, #eef3ff);
 }
 
@@ -13,14 +18,16 @@
 }
 
 .web-header h1 {
-  margin-bottom: 18px;
-  font-size: 48px;
+  margin: 0 0 18px;
   color: #111827;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
 .web-header p {
   max-width: 720px;
   margin: 0 auto 30px;
+
   color: #6b7280;
   font-size: 20px;
   line-height: 1.7;
@@ -30,25 +37,56 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   padding: 15px 26px;
+
   border-radius: 12px;
+
   background: #25d366;
   color: #ffffff;
+
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
+
   box-shadow: 0 12px 28px rgba(37, 211, 102, 0.3);
-  transition: 0.25s ease;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .web-btn:hover {
   background: #1ebe5d;
   transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.38);
+}
+
+.web-showcase {
+  max-width: 1180px;
+  margin: 0 auto 45px;
+  padding: 12px;
+
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
+}
+
+.web-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 16px;
 }
 
 .web-grid {
   max-width: 1180px;
   margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -57,12 +95,20 @@
 .web-card {
   min-height: 240px;
   padding: 32px 26px;
+  box-sizing: border-box;
+
   border: 1px solid rgba(124, 92, 255, 0.12);
   border-radius: 22px;
+
   background: rgba(255, 255, 255, 0.92);
+
   text-align: center;
+
   box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .web-card:hover {
@@ -75,21 +121,27 @@
   height: 64px;
   margin-bottom: 22px;
   padding: 17px;
+  box-sizing: border-box;
+
   border-radius: 18px;
+
   background: linear-gradient(135deg, #7c5cff, #2ea8ff);
   color: #ffffff;
-  box-sizing: border-box;
+
   box-shadow: 0 12px 25px rgba(124, 92, 255, 0.25);
 }
 
 .web-card h3 {
   margin: 0 0 12px;
+
   color: #111827;
   font-size: 24px;
+  line-height: 1.25;
 }
 
 .web-card p {
   margin: 0;
+
   color: #6b7280;
   font-size: 16px;
   line-height: 1.6;
@@ -99,9 +151,23 @@
   grid-column: 2;
 }
 
+/* TABLETS */
+
 @media (max-width: 900px) {
   .web-demo {
     padding: 55px 30px;
+  }
+
+  .web-header {
+    margin-bottom: 40px;
+  }
+
+  .web-header h1 {
+    font-size: 42px;
+  }
+
+  .web-header p {
+    font-size: 18px;
   }
 
   .web-grid {
@@ -113,55 +179,78 @@
   }
 }
 
+/* CELULARES */
+
 @media (max-width: 600px) {
   .web-demo {
-    padding: 45px 18px;
+    padding: 36px 16px;
+  }
+
+  .web-header {
+    margin-bottom: 30px;
   }
 
   .web-header h1 {
-    font-size: 36px;
+    margin-bottom: 14px;
+
+    font-size: 32px;
+    line-height: 1.2;
   }
 
   .web-header p {
-    font-size: 17px;
-  }
+    margin-bottom: 24px;
 
-  .web-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .web-card {
-    min-height: auto;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .web-btn {
     width: 100%;
+    padding: 14px 18px;
     box-sizing: border-box;
+
+    font-size: 16px;
   }
-}
-.web-showcase {
-  max-width: 1180px;
-  margin: 0 auto 45px;
-  padding: 12px;
-  border-radius: 24px;
-  background: white;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
-}
 
-.web-showcase img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-}
-
-@media (max-width: 600px) {
   .web-showcase {
-    padding: 6px;
-    border-radius: 16px;
+    margin-bottom: 30px;
+    padding: 5px;
+
+    border-radius: 14px;
   }
 
   .web-showcase img {
-    border-radius: 11px;
+    border-radius: 10px;
+  }
+
+  .web-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .web-card {
+    min-height: auto;
+    padding: 26px 20px;
+
+    border-radius: 18px;
+  }
+
+  .web-card:hover {
+    transform: none;
+  }
+
+  .web-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+    padding: 14px;
+  }
+
+  .web-card h3 {
+    font-size: 21px;
+  }
+
+  .web-card p {
+    font-size: 15px;
   }
 }

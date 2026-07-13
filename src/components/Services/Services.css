@@ -33,3 +33,67 @@
     gap: 35px;
     flex-wrap: wrap;
 }
+
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .services{
+        padding:90px 35px;
+    }
+
+    .services h2{
+        font-size:42px;
+    }
+
+    .services p{
+        font-size:19px;
+        margin-bottom:50px;
+    }
+
+}
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .services{
+        padding:70px 20px;
+    }
+
+    .services h2{
+        font-size:34px;
+        line-height:1.2;
+    }
+
+    .services p{
+        font-size:16px;
+        line-height:1.7;
+        margin-bottom:40px;
+    }
+
+    .services-grid{
+        gap:22px;
+    }
+
+}
+
+/* ========================= */
+/* CELULARES PEQUEÑOS */
+/* ========================= */
+
+@media (max-width:480px){
+
+    .services{
+        padding:55px 16px;
+    }
+
+    .services h2{
+        font-size:30px;
+    }
+
+}

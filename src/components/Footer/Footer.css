@@ -7,14 +7,15 @@
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 60px;
 }
 
 .footer h2 {
-    font-size:42px;
-    font-weight:800;
+    font-size: 42px;
+    font-weight: 800;
     color: var(--primary);
     margin-bottom: 18px;
 }
@@ -38,26 +39,78 @@
     color: #cbd5e1;
     text-decoration: none;
     margin-bottom: 12px;
-    transition: var(--transition);
+    transition: .3s;
 }
 
 .footer-links a:hover {
-    color: white;
+    color: var(--primary);
+    transform: translateX(6px);
 }
 
 .footer-bottom {
     max-width: 1200px;
     margin: 45px auto 0;
     padding-top: 25px;
+
     border-top: 1px solid rgba(255,255,255,.12);
+
     text-align: center;
+
     color: #94a3b8;
 }
-.footer-links a{
-    transition: .3s;
+
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .footer {
+
+        padding: 60px 35px 25px;
+
+    }
+
+    .footer-content {
+
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+    }
+
 }
 
-.footer-links a:hover{
-    color: var(--primary);
-    transform: translateX(6px);
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 45px 20px 70px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer h2 {
+    font-size: 32px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }

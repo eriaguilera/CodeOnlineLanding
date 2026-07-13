@@ -814,3 +814,118 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
 }
+/* CORRECCIÓN MÓVIL PARA REPORTES DE TURNOS */
+
+@media (max-width: 760px) {
+  .turnos-demo .reportes-page {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .turnos-demo .reportes-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .turnos-demo .reporte-card {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .turnos-demo .reportes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .turnos-demo .reporte-panel {
+    width: 100%;
+    min-width: 0;
+    padding: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .turnos-demo .panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .turnos-demo .grafico-barras {
+    width: 100%;
+    height: 220px;
+    padding-top: 15px;
+    gap: 7px;
+    overflow: hidden;
+  }
+
+  .turnos-demo .barra-item {
+    min-width: 0;
+    flex: 1;
+    font-size: 11px;
+  }
+
+  .turnos-demo .barra {
+    width: 20px;
+    max-width: 100%;
+  }
+
+  .turnos-demo .estado-resumen {
+    width: 100%;
+  }
+
+  .turnos-demo .circulo-reporte {
+    width: 145px;
+    height: 145px;
+  }
+
+  .turnos-demo .circulo-reporte div {
+    width: 96px;
+    height: 96px;
+  }
+
+  .turnos-demo .estado-lista {
+    width: 100%;
+  }
+
+  .turnos-demo .profesionales-lista {
+    gap: 14px;
+  }
+
+  .turnos-demo .profesional-fila {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .turnos-demo .profesional-posicion {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .turnos-demo .profesional-fila strong,
+  .turnos-demo .profesional-fila span {
+    min-width: 0;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+
+  .turnos-demo .profesional-progreso {
+    grid-column: 2 / 4;
+    width: 100%;
+  }
+
+  .turnos-demo .btn-ver-todos {
+    padding: 9px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}

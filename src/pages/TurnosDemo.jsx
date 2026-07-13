@@ -57,7 +57,7 @@ function TurnosDemo() {
   const encabezadoActual = titulos[seccionActiva];
 
   return (
-    <div className="sales-demo">
+    <div className="sales-demo turnos-demo">
       <aside className="sales-sidebar">
         <div className="sales-brand">
           <div className="sales-logo">&lt;/&gt;</div>

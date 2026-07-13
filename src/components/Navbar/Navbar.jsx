@@ -1,8 +1,16 @@
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuAbierto, setMenuAbierto] = useState(false);
+
+  const cerrarMenu = () => {
+    setMenuAbierto(false);
+  };
+
   return (
-    <nav>
+    <nav className="navbar">
       <div className="logo">
         <div className="logo-icon">
           &lt;/&gt;
@@ -14,21 +22,39 @@ function Navbar() {
         </h2>
       </div>
 
-      <ul>
+      <button
+        type="button"
+        className="menu-toggle"
+        onClick={() => setMenuAbierto(!menuAbierto)}
+        aria-label={menuAbierto ? "Cerrar menú" : "Abrir menú"}
+        aria-expanded={menuAbierto}
+      >
+        {menuAbierto ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <ul className={menuAbierto ? "nav-links abierto" : "nav-links"}>
         <li>
-          <a href="#">Inicio</a>
+          <a href="#" onClick={cerrarMenu}>
+            Inicio
+          </a>
         </li>
 
         <li>
-          <a href="#servicios">Sistemas</a>
+          <a href="#servicios" onClick={cerrarMenu}>
+            Sistemas
+          </a>
         </li>
 
         <li>
-          <a href="#nosotros">Nosotros</a>
+          <a href="#nosotros" onClick={cerrarMenu}>
+            Nosotros
+          </a>
         </li>
 
         <li>
-          <a href="#contacto">Contacto</a>
+          <a href="#contacto" onClick={cerrarMenu}>
+            Contacto
+          </a>
         </li>
       </ul>
     </nav>
